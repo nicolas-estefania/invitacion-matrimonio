@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Nos casamos. Acompáñanos a celebrar este día tan especial.">
+
+    <title>Nicolás & Estefanía | Nuestra boda</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <main>
+
+        <!-- =================================
+             PORTADA DE LA INVITACIÓN
+        ================================== -->
+
+        <section class="portada">
+
+            <div class="marco">
+
+                <!-- REPRODUCTOR DE MÚSICA -->
+
+                <div class="reproductor-musica">
+
+                    <audio id="musicaBoda" loop>
+                        <source src="assets/audio/musica-boda.mp3" type="audio/mpeg">
+                    </audio>
+
+                    <button
+                        id="botonMusica"
+                        class="boton-musica"
+                        type="button"
+                        aria-label="Activar música"
+                        title="Activar música">
+                        ♫
+                    </button>
+
+                </div>
+
+                <!-- CONTENIDO DE LA PORTADA -->
+
+                <p class="texto-superior">NOS CASAMOS</p>
+
+                <div class="espacio-logo">
+                    <span>Logo de nuestra boda</span>
+                </div>
+
+                <h1>Nicolás & Estefanía</h1>
+
+                <div class="separador"></div>
+
+                <p class="fecha">24 de abril de 2027</p>
+
+                <p class="mensaje">
+                    Nos encantaría compartir este día tan especial contigo.
+                </p>
+
+                <!-- BOTÓN PARA ABRIR LA INVITACIÓN -->
+
+                <button
+                    class="boton-invitacion"
+                    type="button"
+                    onclick="abrirInvitacion()">
+                    Abrir invitación
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             BIENVENIDA A LA INVITACIÓN
+        ================================== -->
+
+        <section class="bienvenida" id="bienvenida">
+
+            <p class="texto-superior">UN DÍA PARA RECORDAR</p>
+
+            <h2>¡Nos casamos!</h2>
+
+            <div class="separador"></div>
+
+            <p class="mensaje-bienvenida">
+                Después de compartir tantos momentos especiales,
+                queremos celebrar el comienzo de una nueva etapa
+                rodeados de las personas que más queremos.
+            </p>
+
+            <p class="frase-bienvenida">
+                Nos encantaría contar con tu presencia.
+            </p>
+
+        </section>
+
+        
+<!-- =================================
+     CEREMONIA Y CELEBRACIÓN
+================================== -->
+
+<section class="detalles-boda" id="detalles">
+
+    <p class="texto-superior">ACOMPAÑANOS EN ESTE DÍA</p>
+
+    <h2>Ceremonia y celebración</h2>
+
+    <div class="separador"></div>
+
+    <div class="tarjetas-lugares">
+
+        <!-- IGLESIA -->
+
+        <article class="tarjeta-lugar">
+
+            <span class="icono-lugar">✧</span>
+
+            <h3>Ceremonia religiosa</h3>
+
+            <p class="nombre-lugar">
+                Parroquia El Señor de las Misericordias
+            </p>
+
+            <p class="direccion-lugar">
+                Cl. 67 #47-6, Manrique, Medellín
+            </p>
+
+            <p class="hora-pendiente">
+                Hora: por confirmar
+            </p>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=6.2636,-75.55688"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="boton-mapa">
+                Ver ubicación en Google Maps
+            </a>
+
+        </article>
+
+
+        <!-- RECEPCIÓN -->
+
+        <article class="tarjeta-lugar">
+
+            <span class="icono-lugar">✧</span>
+
+            <h3>Recepción</h3>
+
+            <p class="nombre-lugar">
+                Laion Eventos
+            </p>
+
+            <p class="direccion-lugar">
+                Calle 32F #75C-145, Medellín
+            </p>
+
+            <p class="hora-pendiente">
+                Hora: por confirmar
+            </p>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Laion+Eventos+Calle+32F+%2375C-145+Medell%C3%ADn"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="boton-mapa">
+                Ver ubicación en Google Maps
+            </a>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =================================
+     INFORMACIÓN IMPORTANTE
+================================== -->
+
+<section class="informacion-importante" id="informacion">
+
+    <p class="texto-superior">ALGUNOS DETALLES ESPECIALES</p>
+
+    <h2>Información importante</h2>
+
+    <div class="separador"></div>
+
+    <div class="tarjetas-informacion">
+
+        <!-- REGALOS -->
+
+        <article class="tarjeta-informacion">
+
+            <span class="icono-informacion">♡</span>
+
+            <h3>Lluvia de sobres</h3>
+
+            <p>
+                El mejor regalo es compartir este día contigo.
+                Si deseas tener un detalle con nosotros,
+                agradeceremos tu lluvia de sobres.
+            </p>
+
+        </article>
+
+        <!-- CELEBRACIÓN -->
+
+        <article class="tarjeta-informacion">
+
+            <span class="icono-informacion">✧</span>
+
+            <h3>Celebración</h3>
+
+            <p>
+                Hemos preparado esta celebración para disfrutar
+                de una noche especial entre adultos.
+                Agradecemos tu comprensión.
+            </p>
+
+        </article>
+
+        <!-- VESTUARIO -->
+
+        <article class="tarjeta-informacion">
+
+            <span class="icono-informacion">❀</span>
+
+            <h3>Vestuario</h3>
+
+            <p>
+                No tenemos un código de vestimenta establecido.
+                Queremos que disfrutes este día sintiéndote
+                cómodo y a gusto.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================
+     CONFIRMACIÓN DE ASISTENCIA
+================================== -->
+
+<section class="confirmacion-asistencia" id="confirmacion">
+
+    <p class="texto-superior">QUEREMOS CONTAR CONTIGO</p>
+
+    <h2>¿Nos acompañas?</h2>
+
+    <div class="separador"></div>
+
+    <p class="mensaje-confirmacion">
+        Nos haría muy felices compartir este día tan especial contigo.
+        Por favor, confirma tu asistencia.
+    </p>
+
+    <button
+        class="boton-confirmacion"
+        type="button"
+        onclick="mostrarFormulario()">
+        Confirmar asistencia
+    </button>
+
+    <!-- FORMULARIO DE CONFIRMACIÓN -->
+
+    <div class="formulario-confirmacion" id="formularioConfirmacion">
+
+        <h3>Confirma tu asistencia</h3>
+
+        <p id="nombresInvitados"></p>
+
+        <p id="cuposInvitados"></p>
+
+        <form id="formularioRSVP">
+
+            <div class="campo-confirmacion">
+
+                <label>¿Podrás acompañarnos?</label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="asistencia"
+                        value="SI"
+                        required>
+                    ¡Sí, allí estaremos!
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="asistencia"
+                        value="NO">
+                    Lo sentimos, no podremos asistir.
+                </label>
+
+            </div>
+
+            <div class="campo-confirmacion">
+
+                <label for="observaciones">
+                    Observaciones (opcional)
+                </label>
+
+                <textarea
+                    id="observaciones"
+                    name="observaciones"
+                    rows="4"
+                    maxlength="500"
+                    placeholder="Si deseas dejarnos algún mensaje, puedes escribirlo aquí.">
+                </textarea>
+
+            </div>
+
+            <button
+                type="submit"
+                class="boton-confirmacion">
+                Enviar confirmación
+            </button>
+
+        </form>
+
+        <p id="mensajeResultado" role="status"></p>
+
+    </div>
+
+</section>
+
+
+
+        <!-- =================================
+             CUENTA REGRESIVA
+        ================================== -->
+
+        <section class="cuenta-regresiva">
+
+            <h2>La cuenta regresiva</h2>
+
+            <p>Falta poco para nuestro gran día</p>
+
+            <div class="contador">
+
+                <div class="contador-item">
+                    <span id="dias">00</span>
+                    <small>Días</small>
+                </div>
+
+                <div class="contador-item">
+                    <span id="horas">00</span>
+                    <small>Horas</small>
+                </div>
+
+                <div class="contador-item">
+                    <span id="minutos">00</span>
+                    <small>Minutos</small>
+                </div>
+
+                <div class="contador-item">
+                    <span id="segundos">00</span>
+                    <small>Segundos</small>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ARCHIVO JAVASCRIPT -->
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
