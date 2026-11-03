@@ -1,0 +1,816 @@
+
+/* =================================
+   CONFIGURACIÓN GENERAL
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #f8f5ee;
+    color: #455344;
+    min-height: 100vh;
+}
+
+/* =================================
+   CONTENEDOR PRINCIPAL
+================================= */
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 25px;
+}
+
+/* =================================
+   PORTADA DE LA INVITACIÓN
+================================= */
+
+.portada {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.marco {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+    min-height: 650px;
+    padding: 55px 35px;
+    background-color: #fffdf8;
+    border: 1px solid #d6c9a9;
+    outline: 1px solid #e8dfcd;
+    outline-offset: 7px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 30px rgba(70, 80, 60, 0.08);
+}
+
+/* =================================
+   TEXTO SUPERIOR
+================================= */
+
+.texto-superior {
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: #8b987c;
+    margin-bottom: 35px;
+}
+
+/* =================================
+   ESPACIO RESERVADO PARA EL LOGO
+================================= */
+
+.espacio-logo {
+    width: 190px;
+    height: 190px;
+    border: 1px dashed #c5b995;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9b987f;
+    font-size: 13px;
+    margin-bottom: 35px;
+}
+
+/* =================================
+   NOMBRES
+================================= */
+
+.marco h1 {
+    font-size: 34px;
+    font-weight: normal;
+    color: #52634d;
+    margin-bottom: 20px;
+}
+
+/* =================================
+   SEPARADOR
+================================= */
+
+.separador {
+    width: 65px;
+    height: 1px;
+    background-color: #c6b78f;
+    margin-bottom: 22px;
+}
+
+/* =================================
+   FECHA
+================================= */
+
+.fecha {
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: #7c866f;
+    margin-bottom: 20px;
+}
+
+/* =================================
+   MENSAJE
+================================= */
+
+.mensaje {
+    max-width: 300px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #77776b;
+    margin-bottom: 30px;
+}
+
+/* =================================
+   BOTÓN DE INVITACIÓN
+================================= */
+
+.boton-invitacion {
+    background-color: #69785f;
+    color: white;
+    border: none;
+    padding: 13px 30px;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/* =================================
+   BOTÓN DISCRETO DE MÚSICA
+================================= */
+
+.reproductor-musica {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+}
+
+.boton-musica {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #c6b78f;
+    background-color: #fffdf8;
+    color: #69785f;
+    font-size: 21px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-musica:hover {
+    background-color: #f1eee4;
+}
+
+/* =================================
+   CUENTA REGRESIVA
+================================= */
+
+.cuenta-regresiva {
+    width: 100%;
+    max-width: 520px;
+    margin: 45px auto;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fffdf8;
+    border: 1px solid #e5dcc9;
+    box-shadow: 0 5px 20px rgba(70, 80, 60, 0.05);
+}
+
+.cuenta-regresiva h2 {
+    font-size: 27px;
+    font-weight: normal;
+    color: #52634d;
+    margin-bottom: 12px;
+}
+
+.cuenta-regresiva > p {
+    color: #888575;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.contador {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.contador-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 65px;
+}
+
+.contador-item span {
+    font-size: 32px;
+    color: #69785f;
+    font-weight: normal;
+}
+
+.contador-item small {
+    margin-top: 8px;
+    color: #888575;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* =================================
+   ADAPTACIÓN PARA CELULARES
+================================= */
+
+@media (max-width: 600px) {
+
+    main {
+        padding: 20px 12px;
+    }
+
+    .portada {
+        padding: 15px 8px;
+    }
+
+    .marco {
+        min-height: 580px;
+        padding: 40px 20px;
+    }
+
+    .espacio-logo {
+        width: 155px;
+        height: 155px;
+        margin-bottom: 28px;
+    }
+
+    .marco h1 {
+        font-size: 27px;
+    }
+
+    .texto-superior {
+        font-size: 11px;
+        letter-spacing: 4px;
+    }
+
+    .fecha {
+        font-size: 15px;
+    }
+
+    .mensaje {
+        font-size: 14px;
+    }
+
+    .boton-invitacion {
+        padding: 12px 25px;
+        font-size: 13px;
+    }
+
+    .cuenta-regresiva {
+        margin: 30px auto;
+        padding: 30px 12px;
+    }
+
+    .contador {
+        gap: 12px;
+    }
+
+    .contador-item {
+        min-width: 58px;
+    }
+
+    .contador-item span {
+        font-size: 27px;
+    }
+
+    .boton-musica {
+        width: 35px;
+        height: 35px;
+        font-size: 19px;
+    }
+}
+
+
+/* =================================
+   SECCIÓN DE BIENVENIDA
+================================= */
+
+.bienvenida {
+    width: 100%;
+    max-width: 520px;
+    margin: 45px auto;
+    padding: 55px 35px;
+    background-color: #fffdf8;
+    border: 1px solid #e5dcc9;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(70, 80, 60, 0.05);
+}
+
+.bienvenida h2 {
+    font-size: 32px;
+    font-weight: normal;
+    color: #52634d;
+    margin-bottom: 22px;
+}
+
+.mensaje-bienvenida {
+    max-width: 380px;
+    margin: 0 auto 25px;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #77776b;
+}
+
+.frase-bienvenida {
+    font-size: 16px;
+    font-style: italic;
+    color: #8b987c;
+    line-height: 1.8;
+}
+
+/* Adaptación para celulares */
+
+@media (max-width: 600px) {
+    .bienvenida {
+        margin: 30px auto;
+        padding: 40px 22px;
+    }
+
+    .bienvenida h2 {
+        font-size: 27px;
+    }
+
+    .mensaje-bienvenida,
+    .frase-bienvenida {
+        font-size: 14px;
+    }
+}
+
+
+/* =================================
+   CEREMONIA Y CELEBRACIÓN
+================================= */
+
+.detalles-boda {
+    width: 100%;
+    max-width: 850px;
+    margin: 45px auto;
+    padding: 55px 25px;
+    text-align: center;
+    background-color: #fffdf8;
+    border: 1px solid #e5dcc9;
+    box-shadow: 0 5px 20px rgba(70, 80, 60, 0.05);
+}
+
+.detalles-boda h2 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #52634d;
+    margin-bottom: 22px;
+}
+
+.tarjetas-lugares {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.tarjeta-lugar {
+    padding: 35px 25px;
+    background-color: #f8f5ee;
+    border: 1px solid #e5dcc9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icono-lugar {
+    color: #b9a77d;
+    font-size: 27px;
+    margin-bottom: 18px;
+}
+
+.tarjeta-lugar h3 {
+    font-size: 19px;
+    font-weight: normal;
+    color: #69785f;
+    margin-bottom: 20px;
+}
+
+.nombre-lugar {
+    font-size: 17px;
+    color: #52634d;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.direccion-lugar {
+    font-size: 14px;
+    color: #77776b;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.hora-pendiente {
+    font-size: 13px;
+    font-style: italic;
+    color: #8b987c;
+    margin-bottom: 22px;
+}
+
+.boton-mapa {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #69785f;
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-mapa:hover {
+    background-color: #52634d;
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    .detalles-boda {
+        margin: 30px auto;
+        padding: 40px 18px;
+    }
+
+    .detalles-boda h2 {
+        font-size: 26px;
+    }
+
+    .tarjetas-lugares {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .tarjeta-lugar {
+        padding: 30px 20px;
+    }
+}
+
+
+
+/* =================================
+   DETALLES BOTÁNICOS Y DECORATIVOS
+================================= */
+
+/* Pequeño detalle botánico en las tarjetas */
+.tarjeta-lugar {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decoración discreta en las esquinas */
+.tarjeta-lugar::before {
+    content: "❧";
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    font-size: 25px;
+    color: #b9b99b;
+    opacity: 0.55;
+}
+
+.tarjeta-lugar::after {
+    content: "❧";
+    position: absolute;
+    bottom: 8px;
+    right: 12px;
+    font-size: 25px;
+    color: #b9b99b;
+    opacity: 0.55;
+    transform: rotate(180deg);
+}
+
+/* Separadores elegantes */
+.separador {
+    position: relative;
+}
+
+.separador::after {
+    content: "✧";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fffdf8;
+    color: #b9a77d;
+    padding: 0 8px;
+    font-size: 15px;
+}
+
+/* Transición suave en los botones */
+.boton-invitacion,
+.boton-mapa {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.boton-invitacion:hover,
+.boton-mapa:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =================================
+   INFORMACIÓN IMPORTANTE
+================================= */
+
+.informacion-importante {
+    width: 100%;
+    max-width: 850px;
+    margin: 45px auto;
+    padding: 55px 25px;
+    text-align: center;
+    background-color: #fffdf8;
+    border: 1px solid #e5dcc9;
+    box-shadow: 0 5px 20px rgba(70, 80, 60, 0.05);
+}
+
+.informacion-importante h2 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #52634d;
+    margin-bottom: 22px;
+}
+
+.tarjetas-informacion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.tarjeta-informacion {
+    position: relative;
+    overflow: hidden;
+    padding: 35px 22px;
+    background-color: #f8f5ee;
+    border: 1px solid #e5dcc9;
+}
+
+.tarjeta-informacion::before {
+    content: "❧";
+    position: absolute;
+    top: 7px;
+    left: 10px;
+    font-size: 23px;
+    color: #b9b99b;
+    opacity: 0.5;
+}
+
+.icono-informacion {
+    display: block;
+    font-size: 30px;
+    color: #b9a77d;
+    margin-bottom: 18px;
+}
+
+.tarjeta-informacion h3 {
+    font-size: 19px;
+    font-weight: normal;
+    color: #69785f;
+    margin-bottom: 15px;
+}
+
+.tarjeta-informacion p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #77776b;
+}
+
+/* ADAPTACIÓN PARA TABLET Y CELULAR */
+
+@media (max-width: 700px) {
+
+    .tarjetas-informacion {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .informacion-importante {
+        margin: 30px auto;
+        padding: 40px 18px;
+    }
+
+    .informacion-importante h2 {
+        font-size: 26px;
+    }
+
+    .tarjeta-informacion {
+        padding: 30px 22px;
+    }
+}
+
+
+/* =================================
+   CONFIRMACIÓN DE ASISTENCIA
+================================= */
+
+.confirmacion-asistencia {
+    width: 100%;
+    max-width: 650px;
+    margin: 45px auto;
+    padding: 55px 30px;
+    text-align: center;
+    background-color: #fffdf8;
+    border: 1px solid #e5dcc9;
+    box-shadow: 0 5px 20px rgba(70, 80, 60, 0.05);
+}
+
+.confirmacion-asistencia h2 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #52634d;
+    margin-bottom: 22px;
+}
+
+.mensaje-confirmacion {
+    max-width: 420px;
+    margin: 0 auto 28px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #77776b;
+}
+
+.boton-confirmacion {
+    background-color: #69785f;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.boton-confirmacion:hover {
+    background-color: #52634d;
+    transform: translateY(-2px);
+}
+
+/* FORMULARIO */
+
+.formulario-confirmacion {
+    display: none;
+    margin-top: 35px;
+    padding: 30px 20px;
+    background-color: #f8f5ee;
+    border: 1px solid #e5dcc9;
+}
+
+.formulario-confirmacion h3 {
+    font-size: 22px;
+    font-weight: normal;
+    color: #52634d;
+    margin-bottom: 15px;
+}
+
+.formulario-confirmacion p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #77776b;
+}
+
+/* ADAPTACIÓN PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    .confirmacion-asistencia {
+        margin: 30px auto;
+        padding: 40px 20px;
+    }
+
+    .confirmacion-asistencia h2 {
+        font-size: 26px;
+    }
+
+    .boton-confirmacion {
+        padding: 13px 22px;
+        font-size: 13px;
+    }
+
+    .formulario-confirmacion {
+        padding: 25px 15px;
+    }
+}
+
+
+/* =================================
+   FORMULARIO DE CONFIRMACIÓN RSVP
+================================= */
+
+.campo-confirmacion {
+    margin: 25px 0;
+    text-align: left;
+}
+
+.campo-confirmacion p {
+    color: #596347;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Opciones de asistencia */
+
+.campo-confirmacion label:has(input[type="radio"]) {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 18px;
+    margin: 10px 0;
+    background-color: #faf8f3;
+    border: 1px solid #e5dfd2;
+    border-radius: 12px;
+    color: #55594b;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.campo-confirmacion label:has(input[type="radio"]):hover {
+    background-color: #f0eee5;
+    border-color: #9a9e80;
+}
+
+.campo-confirmacion input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    accent-color: #78815e;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+/* Campo de observaciones */
+
+.campo-confirmacion label[for="observaciones"] {
+    display: block;
+    margin-bottom: 10px;
+    color: #596347;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.campo-confirmacion textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 110px;
+    padding: 14px 16px;
+    border: 1px solid #ded8ca;
+    border-radius: 12px;
+    background-color: #faf8f3;
+    color: #55594b;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1.6;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.campo-confirmacion textarea:focus {
+    border-color: #89916e;
+    box-shadow: 0 0 0 3px rgba(137, 145, 110, 0.12);
+}
+
+.campo-confirmacion textarea::placeholder {
+    color: #aaa697;
+}
+
+/* Mensaje de resultado */
+
+#mensajeResultado {
+    margin-top: 18px;
+    color: #596347;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
+
