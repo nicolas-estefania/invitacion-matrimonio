@@ -1,0 +1,10 @@
+# Archivos temporales de Windows
+Thumbs.db
+.DS_Store
+
+# Configuración local de Visual Studio Code
+.vscode/
+
+# Dependencias y archivos generados
+node_modules/
+dist/
